@@ -1,0 +1,36 @@
+.fotosmain{
+    width: 70%;
+    margin-top: 10px;
+    @media (min-width: 500px){
+        width: 100%;
+    }
+}
+._main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    @media (min-width: 500px){
+        flex-direction: row;
+        margin: 10px;
+        border: 2px solid black;
+    }
+}
+.wrap-texto{
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.651);
+    padding: 20px;
+    font-size: 13px;
+    font-family: "Montserrat";
+        @media (min-width: 500px){
+            width: 70%;
+            font-size: 16px;
+            padding: 30px;
+            }
+            @media (min-width: 760px){
+                font-size: 20px;
+                padding: 40px;
+            }
+    }

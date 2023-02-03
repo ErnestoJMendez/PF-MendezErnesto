@@ -1,0 +1,213 @@
+@import "variableglobal";
+@import "generales";
+@import "media";
+@mixin formato ($fondocolor, $letracolor){
+    background-color: $fondocolor;
+    color: $letracolor;
+}
+.navbar{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.desli{
+    @include formato(black, white );
+    margin: 0px 10px 0px 10px;
+    padding: 3px;
+}
+.promo{
+    font-family: "Montserrat";
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.titulo__{
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.__otrotitulo{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.fotosection{
+    width: 40%;
+    margin: 10px;
+    border: solid 7px black;
+    border-radius: 20px;
+
+}
+.fotossection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+section h2{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+}
+.pruebap2{
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 20px;
+    text-align:center;
+    margin: 10px;
+}
+._fotoprincipal{
+    display: flex;
+    justify-content: center;
+}
+article .pruebap3{
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+}
+article div{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article{
+    background-color: lavender;
+    margin: 10px;
+    border-radius: 20px;
+}
+.youtube{
+    width: 80%;
+    margin: 20px;
+}
+._contacto{
+    margin: 10px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.__contacto{
+    margin: 10px;
+}
+.marginbotcon{
+    margin-bottom: 15px;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+.textcontact{
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+.___logo{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Montserrat";
+    font-weight: 100;
+    color: black;
+    background-color: white;
+}
+._cards{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    gap: 20px;
+}
+.wrap{
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/rinoneraceleste.webp);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+.efectofooter{
+    transition: all 0.7s;
+}
+.efectofooter:hover{
+    scale: 1.2;
+}
+.novemarg{
+    margin: 10px;
+    }
+.novecardmarg{
+    margin: 10px;
+}
+
+@media (min-width: 500px){
+    nav ul{
+        font-size: 20px;
+    }
+    .titulo__{
+        font-size: 30px;
+    }
+    ._fotoprincipal{
+        margin: 5px;
+    }
+    .fotossection{
+        flex-direction: row;
+        align-content: center;
+        width: auto;
+        margin: 10px;
+    }
+    .fotosection{
+        width: 30%;
+        margin: 5px;
+    }
+    .youtube{
+        width: 100%;
+        height: 300px;
+    }
+}
+@media (min-width: 600px){
+    ._cards{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media (min-width: 760px){
+    .infoabajo{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .novemarg{
+        display: flex;
+        flex-direction: row;
+    }
+    .mapa{
+        width: 40%;
+    }
+    .footerentero{
+        display: flex;
+        flex-direction: row;
+    }
+    .promo{
+        font-size: 20px;
+    }
+    .artvideo{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width: 955px){
+    ._cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
